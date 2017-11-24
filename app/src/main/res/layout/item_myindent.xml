@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/ll_myindent"
+        android:background="@drawable/login_edittext_background"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_indent_number"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="订单编号:10120101211"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_indent_totle"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text="订单总额:¥ 194.00"/>
+
+            <TextView
+                android:id="@+id/tv_indent_state"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="状态:待付款"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@mipmap/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_indent_time"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="2011/01/12     14:50:06"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt1_myindent"
+            android:layout_marginLeft="20dp"
+            android:background="@color/red"
+            android:text="删除订单"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt2_myindent"
+            android:background="@color/red"
+            android:layout_marginLeft="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即支付"/>
+
+    </LinearLayout>
+</LinearLayout>

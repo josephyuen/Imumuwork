@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_goods"
+        android:background="@mipmap/rb_backgrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:elevation="3dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:src="@mipmap/mumu_logo"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/sdv_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="@mipmap/mumu_logo"
+            />
+
+        <TextView
+            android:id="@+id/tv_shoplist_name"
+            android:text="商品名称"
+            android:textSize="18dp"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignTop="@+id/sdv_icon"
+            android:layout_toEndOf="@+id/sdv_icon" />
+
+        <TextView
+            android:id="@+id/tv_shoplist_price"
+            android:text="市场价：300.0元"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/tv_shoplist_name" />
+
+        <TextView
+            android:id="@+id/tv_shoplist_vipprice"
+            android:text="VIP：280.0元"
+            android:textColor="@color/colorEmphasisText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="31dp" />
+
+        <TextView
+            android:id="@+id/tv_shoplist_inventory"
+            android:text="库存"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_shoplist_num"
+            android:layout_alignBottom="@+id/tv_shoplist_num"
+            android:layout_alignEnd="@+id/tv_shoplist_vipprice" />
+
+        <TextView
+            android:id="@+id/tv_shoplist_num"
+            android:text="销量"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sdv_icon"
+            android:layout_alignStart="@+id/tv_shoplist_price"
+            android:layout_marginBottom="11dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

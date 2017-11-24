@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        layout="@layout/my_toolbar"></include>
+
+    <RelativeLayout
+        android:id="@+id/rl_accounts_location"
+        android:background="@mipmap/rb_backgrand"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:text="收货人姓名"
+            android:id="@+id/tv_accounts_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="电话"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_accounts_phone" />
+
+        <TextView
+            android:text="详细地址"
+            android:id="@+id/tv_accounts_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_accounts_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_accounts_distribution"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:background="@mipmap/rb_backgrand"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="配送方式"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_accounts_distribution_icon" />
+
+        <ImageView
+            android:src="@mipmap/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_accounts_distribution"
+            android:layout_marginEnd="15dp"
+            android:layout_alignTop="@+id/tv_accounts_distribution"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="快递：￥10.0"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/tv_accounts_distribution"
+            android:layout_alignBaseline="@+id/tv_accounts_distribution_icon"
+            android:layout_alignBottom="@+id/tv_accounts_distribution_icon"
+            android:layout_toStartOf="@+id/iv_accounts_distribution" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_accounts_list"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:background="@mipmap/btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:text="提交订单"
+            android:textColor="@color/colorWhiteText"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/bt_accounts_submit" />
+
+        <TextView
+            android:text="合计:"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bt_accounts_submit"
+            android:layout_alignBottom="@+id/bt_accounts_submit"
+            android:layout_toStartOf="@+id/tv_accounts_gross"
+            android:layout_marginEnd="9dp"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tv_accounts_gross"
+            android:text="￥ 8705.00"
+            android:textSize="20dp"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/bt_accounts_submit" />
+
+    </RelativeLayout>
+
+</LinearLayout>

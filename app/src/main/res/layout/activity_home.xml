@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zumumu.imumu.ui.view.NoScrollViewPager
+        android:id="@+id/nsvp_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></com.zumumu.imumu.ui.view.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_home"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/rb_backgrand"
+        android:layout_gravity="bottom">
+
+        <RadioButton
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/rb_home"
+            android:layout_width="0px"
+            android:text="首页"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/rb_community"
+            android:layout_width="0px"
+            android:text="牧牧社区"
+            android:drawableTop="@drawable/tab_search_selector"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/rb_cart"
+            android:layout_width="0px"
+            android:text="购物车"
+            android:drawableTop="@drawable/tab_cart_selector"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/rb_center"
+            android:layout_width="0px"
+            android:text="个人中心"
+            android:drawableTop="@drawable/tab_center_selector"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/my_toolbar"></include>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择支付方式:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/iv_pay_balance"
+            android:layout_marginLeft="25dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/mywallet"/>
+
+        <TextView
+            android:id="@+id/tv_pay_balance"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_pay_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额支付"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="牧牧币支付,交易完成有惊喜哦"
+            android:layout_alignParentBottom="true"
+            android:textSize="12dp"
+            android:layout_toEndOf="@+id/iv_pay_balance"
+            android:id="@+id/tv_pay_balancedesc" />
+
+        <CheckBox
+            android:id="@+id/cb_pay_balance"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/iv_pay_alilog"
+            android:layout_marginLeft="25dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/alipaylogo"/>
+
+        <TextView
+            android:id="@+id/tv_pay_zfb"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_pay_alilog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数亿用户都在用,安全可托付"
+            android:layout_alignParentBottom="true"
+            android:textSize="12dp"
+            android:layout_toEndOf="@+id/iv_pay_alilog"
+            android:id="@+id/tv_pay_zfbdesc" />
+
+        <CheckBox
+            android:id="@+id/cb_pay_zfb"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <Button
+        android:id="@+id/btn_pay_commit"
+        android:textColor="@color/colorWhiteText"
+        android:text="确认支付"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_width="240dp"
+        android:layout_height="50dp" />
+</LinearLayout>

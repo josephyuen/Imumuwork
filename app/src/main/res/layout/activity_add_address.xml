@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/my_toolbar"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/til_addaddress_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <EditText
+                android:hint="请输入收货人姓名"
+                android:id="@+id/et_addaddress_nicknam"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/til_addaddress_phone"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <EditText
+                android:hint="请输入收货人电话号码"
+                android:inputType="phone"
+                android:id="@+id/et_addaddress_phone"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_addaddress_location"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+                <TextView
+                    android:hint="省份"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tv_addaddress_province"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:hint="市级"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:id="@+id/tv_addaddress_citys"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:hint="县/区"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:id="@+id/tv_addaddress_ares"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:text="选择"
+                    android:background="@color/buttonBackground"
+                    android:id="@+id/bt_addaddress_addloction"
+                    android:layout_gravity="center"
+                    android:layout_width="0px"
+                    android:textColor="@color/colorWhiteText"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/til_addaddress_location"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+        <EditText
+            android:hint="请输入您的详细地址"
+            android:id="@+id/et_addaddress_location"
+            android:paddingLeft="10dp"
+            android:singleLine="false"
+            android:maxLines="3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+        
+        <CheckBox
+            android:id="@+id/cb_addaddress"
+            android:textColor="@color/colorAccent"
+            android:text="是否设置为默认收货地址?"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_addaddress"
+            android:text="提交保存"
+            android:textColor="@color/colorWhiteText"
+            android:background="@color/buttonBackground"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+
+    <com.zumumu.imumu.ui.view.ClearEditText
+        android:drawablePadding="10dp"
+        android:drawableLeft="@mipmap/loginuser"
+        android:background="@drawable/edittext_focus"
+        android:inputType="phone"
+        android:id="@+id/et_login_user"
+        android:padding="8dp"
+        android:hint="请输入您的手机号"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignBottom="@+id/et_login_pwd"
+        android:layout_marginBottom="55dp" />
+
+    <com.zumumu.imumu.ui.view.ClearEditText
+        android:drawablePadding="10dp"
+        android:drawableLeft="@mipmap/loginpwd"
+        android:background="@drawable/edittext_focus"
+        android:inputType="textPassword"
+        android:id="@+id/et_login_pwd"
+        android:padding="8dp"
+        android:hint="请输入您的密码"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_above="@+id/cb_login" />
+
+    <CheckBox
+        android:text="记住密码"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/cb_login"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/bt_login_submit"
+        android:layout_alignStart="@+id/et_login_user" />
+
+    <TextView
+        android:text="忘记密码?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_login_forget"
+        android:paddingTop="3dp"
+        android:textColor="@drawable/text_click"
+        android:layout_alignBaseline="@+id/cb_login"
+        android:layout_alignBottom="@+id/cb_login"
+        android:layout_alignEnd="@+id/et_login_pwd"
+        android:layout_marginEnd="10dp" />
+
+    <ImageView
+        android:src="@mipmap/login_wechat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_login_wechat"
+        android:layout_above="@+id/tv_login_wechat"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:gravity="center"
+        android:text="微信登录"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/tv_login_wechat"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/tv_callme_signin"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv_callme_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关于牧牧"
+        android:textColor="@drawable/text_click"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:id="@+id/textView3"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/iv_login_wechat"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/text_click"
+        android:text="注册新用户?"
+        android:id="@+id/tv_login_signin"
+        android:layout_above="@+id/textView3"
+        android:layout_alignStart="@+id/tv_login_wechat"
+        android:layout_marginBottom="6dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/mumu_logo"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/et_login_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:background="@color/buttonBackground"
+        android:text="登录"
+        android:textColor="@color/colorWhiteText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/bt_login_submit"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/tv_login_signin"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

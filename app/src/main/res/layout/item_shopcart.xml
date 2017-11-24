@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:id="@+id/ll_shopcart">
+
+    <CheckBox
+        android:id="@+id/cb_shopcart_select"
+        android:layout_marginTop="15dp"
+        android:layout_width="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_shopcart_icon"
+        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@mipmap/image5"
+        />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_shopcart_title"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:text="土水鸭"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="12dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            android:textColor="@color/red"
+            android:id="@+id/tv_shopcart_curprice"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="现价:¥150"/>
+
+            <TextView
+                android:textSize="12dp"
+                android:id="@+id/tv_shopcart_preprice"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:text="原价:¥170"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:text="数量:"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+
+
+            <Button
+                android:id="@+id/btn_shopcart_cut"
+                android:layout_width="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/by_good_button"
+                android:layout_height="match_parent"
+                android:text="—" />
+
+            <TextView
+                android:id="@+id/tv_shopcart_num"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_border"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxEms="999999"
+                android:paddingLeft="3dp"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="#f00" />
+
+            <Button
+                android:id="@+id/btn_shopcart_add"
+                android:layout_width="20dp"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:background="@drawable/by_good_button"
+                android:text="+" />
+
+        </LinearLayout>
+        <TextView
+            android:textSize="12dp"
+            android:id="@+id/tv_shopcart_norm"
+            android:textColor="@color/black"
+            android:text="产品规格:3盒起卖,一盒30个,共90个,顺丰速运"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:background="@color/white"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/arrow"
+        android:layout_marginTop="15dp"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_shopcart_arrow" />
+
+
+</LinearLayout>

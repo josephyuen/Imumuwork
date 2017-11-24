@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:paddingLeft="50dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhiteText"
+            android:text="地址管理"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/bt_myaddress_edit"
+            android:background="@color/colorAccent"
+            android:text="编辑"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_myaddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/bt_myaddress_add"
+        android:text="添加新地址"
+        android:background="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="50dp" />
+</LinearLayout>

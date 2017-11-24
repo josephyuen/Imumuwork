@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Imumu</string>
+
+    <string-array name="myindent">
+        <item>全部</item>
+        <item>未付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>待评价</item>
+    </string-array>
+
+</resources>

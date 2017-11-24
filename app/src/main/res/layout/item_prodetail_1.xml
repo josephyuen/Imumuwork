@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_prodetail_bigpics"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dip" >
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/vp_prodetail_bigpics"
+                    android:background="#77000000"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="5dip" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_point_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_prodetail_title"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="五常大米(家庭装)"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/tv_prodetail_des"
+                android:layout_marginTop="10dp"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="五常大米,颗粒饱满,让您胃口大开,五常大米,颗粒饱满,让您胃口大开
+                五常大米,颗粒饱满,让您胃口大开,五常大米,颗粒饱满,让您胃口大开,五常大米,颗粒饱满,让您胃口大开
+                "/>
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <TextView
+                    android:textColor="@color/red"
+                    android:textSize="18dp"
+                    android:id="@+id/tv_prodetail_curprice"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="当前价格:155"/>
+
+                <TextView
+                    android:id="@+id/tv_prodetail_preprice"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="原价:185"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <TextView
+                    android:textColor="@color/red"
+                    android:id="@+id/tv_prodetail_vip1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="会员价1:"
+                    android:layout_marginRight="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/red"
+                    android:layout_below="@+id/tv_prodetail_vip1"
+                    android:id="@+id/tv_prodetail_vip2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="会员价2:"
+                    android:layout_marginRight="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_prodetail_sales"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="销量:200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_prodetail_stock"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/tv_prodetail_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="库存:1000"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/tv_prodetail_stock"
+                    android:text="商品评价    (10)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/tv_prodetail_assess" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_below="@+id/tv_prodetail_stock"
+                    android:text="评分 :5分"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/tv_prodetail_mark"
+                    android:layout_alignBottom="@+id/tv_prodetail_assess" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/arrow"
+                    android:id="@+id/iv_prodetail_arrow"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+  </LinearLayout>
+
+</LinearLayout>

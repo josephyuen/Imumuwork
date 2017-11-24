@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/my_toolbar"></include>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tit_forget_phone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp">
+
+        <com.zumumu.imumu.ui.view.ClearEditText
+            android:id="@+id/et_forget_phone"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="请输入您注册的电话号码"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <com.zumumu.imumu.ui.view.TimeButton
+        android:id="@+id/bt_forget_verificationCode"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:padding="4dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/buttonBackground"
+        android:gravity="center"
+        android:textColor="@color/colorWhiteText"
+        android:text="获取验证码"
+        android:textSize="18dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tit_forget_verificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp">
+
+
+    <com.zumumu.imumu.ui.view.ClearEditText
+            android:id="@+id/et_forget_verificationCode"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:hint="请输入您的验证码"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+             />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tit_forget_pwd"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="80dp">
+
+        <com.zumumu.imumu.ui.view.ClearEditText
+            android:id="@+id/et_forget_pwd"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="请输入您的密码" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tit_forget_pwd_again"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.zumumu.imumu.ui.view.ClearEditText
+            android:id="@+id/et_forget_pwd_again"
+            android:layout_gravity="center"
+            android:hint="请再次输入您的密码"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_forget_submit"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/buttonBackground"
+        android:textColor="@color/colorWhiteText"
+        android:text="确认修改" />
+
+</LinearLayout>
